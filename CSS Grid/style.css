@@ -1,0 +1,43 @@
+body{
+    background-color: #121212;
+    color: rgb(116, 110, 110);
+    border: 1px solid white;
+
+    display: grid;
+    grid-template-columns: 10em 64.4em 10em;
+    grid-template-rows: 5em 33em 2em;
+}
+
+header, main, footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    text-align: center;
+}
+
+header,footer{
+    align-self: center;
+}
+
+header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+main{
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    display: grid;
+    grid-template-columns: 10em 64.4em 10em;
+}
+
+nav, article, aside{
+    border: 1px solid white;
+}
+
+footer{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
